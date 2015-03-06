@@ -2,10 +2,7 @@
 all: main
 	./main
 
-# 作りたいファイル : 材料
-%.o : %.c
-	# 作り方
-	gcc -o $@ -c $<
+# .o を .c から作るやりかたは make が知っている
 
 main : lib.o main.o
 	gcc -o main lib.o main.o
