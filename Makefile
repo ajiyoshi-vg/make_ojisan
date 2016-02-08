@@ -8,10 +8,10 @@ main : lib.o main.o
 # 作りたいファイル : 材料
 lib.o : lib.c
 	# 作り方
-	gcc -c lib.c
+	gcc -o lib.o -c lib.c
 
 main.o : main.c
-	gcc -c main.c
+	gcc -o main.o -c main.c
 
 clean:
 	-rm main *.o
